@@ -7,11 +7,10 @@
   </head>
 
   <body>
-    <!-- inizio contenitore -->
-    <div class="conteiner">
 
-      <!-- nav upgrade -->
-      <div class="nav-upgrade">
+    <!-- nav upgrade -->
+    <div class="nav-upgrade">
+      <div class="flex-nav">
         <div class="logo-spotify">
           <img src="img/favicon.ico" alt="logo">
           <h1>Spotify</h1>
@@ -20,9 +19,57 @@
           <a href="#">EFFETTUA L'UPGRADE</a>
         </div>
       </div>
+    </div>
+
+    <!-- inizio contenitore -->
+    <div class="conteiner">
 
       <!-- playlist laterale sx -->
-      <div class="playlist">
+      <div class="col-playlist">
+
+        <!-- parte playlist su -->
+        <div class="col-playlist-su">
+
+          <!-- sezione icone -->
+          <div class="icona-libreria">
+            <a href="#"><img src="img/home.svg" alt=""> <strong>Home</strong></a>
+          </div>
+
+          <div class="icona-libreria">
+            <a href="#"><img src="img/search.svg" alt=""> Cerca</a>
+          </div>
+
+          <div class="icona-libreria">
+            <a href="#"><img src="img/libreria.svg" alt=""> La tua libreria</a>
+          </div>
+
+          <!-- sezione liste nuove -->
+          <ul id="lista-sx">
+            <li><strong>PLAYLIST</strong></li>
+            <li>
+              <a href="#">
+                <div id="icona-plus">
+                  <strong>+</strong>
+                </div> Crea Playlist
+              </a>
+            </li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+
+        </div>
+
+        <!-- parte playlist giù -->
+        <div class="col-playlist-giù">
+          <span>Installa app</span>
+          <hr>
+          <strong>John Doe</strong>
+        </div>
 
       </div>
 
@@ -31,8 +78,67 @@
 
         <!-- barra di navigazione -->
         <nav>
-
+          <ul>
+            <li>
+              <a href="http://www.google.it">IN EVIDENZA</a>
+              <div class="barra-verde"></div>
+            </li>
+            <li>
+              <a href="#">PODCAST</a>
+              <div class="barra-verde"></div>
+            </li>
+            <li>
+              <a href="#">CLASSIFICHE</a>
+              <div class="barra-verde"></div>
+            </li>
+            <li>
+              <a href="#">GENERI E MOOD</a>
+              <div class="barra-verde"></div>
+            </li>
+            <li>
+              <a href="#">NUOVE USCITE</a>
+              <div class="barra-verde"></div>
+            </li>
+            <li>
+              <a href="#">SCOPRI</a>
+              <div class="barra-verde"></div>
+            </li>
+          </ul>
         </nav>
+
+        <!-- prima sezione -->
+        <section>
+          <h2>Recently played</h2>
+          <div class="conteiner-flex">
+            <!-- box1 -->
+            <div class="box uno">
+              <a href="#">
+                <img src="img/metal_lifting.jpg" alt="">
+                <h4>Heavy Metal</h4>
+                <p>Subtitle</p>
+              </a>
+            </div>
+            <!-- box2 -->
+            <div class="box uno">
+              <a href="#">
+                <img src="img/metal_lifting.jpg" alt="">
+                <h4>Heavy Metal</h4>
+                <p>Subtitle</p>
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- seconda sezione -->
+        <section>
+
+        </section>
+
+        <!-- terza sezione -->
+        <section>
+
+        </section>
 
       </main>
 

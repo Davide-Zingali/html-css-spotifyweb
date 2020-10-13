@@ -3,8 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
-
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+.conteiner-flex {
+  display: flex;
+  text-align: center;
+}
 /* regole selettive */
 .conteiner {
   height: calc(100vh - 130px);
@@ -13,20 +24,93 @@
 /* nav upgrade */
 .nav-upgrade {
   background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+}
+.flex-nav {
+  width: 100vw;
   height: 80px;
-  display: flex;
-  justify-content: space-between;
   line-height: 80px;
   padding: 0 15px;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-upgrade h1 {
   display: inline-block;
+}
+.testo-upgrade a {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/* barra di navigazione */
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  height: 65px;
+}
+nav ul li {
+  padding: 0 10px;
+}
+.barra-verde {
+  height: 2px;
+  background-color: #adff2f;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2px;
+  display: none;
+}
+nav ul li:hover .barra-verde {
+  display: block;
+}
+/* playlist */
+.col-playlist {
+  background-color: black;
+  width: 200px;
+  height: calc(100vh - 130px);
+  padding: 80px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col-playlist img {
+  width: 25px;
+}
+.icona-libreria {
+  line-height: 30px;
+}
+#lista-sx {
+  padding: 10px 0;
+}
+#icona-plus {
+  display: inline-block;
+  background-color: #a3a3a3;
+  padding: 10px;
+}
+/* parte centrale laterale dx */
+.conteiner {
+  display: flex;
+}
+
+.corpo-principale {
+  background-color: #141922;
+  height: calc(100vh - 130px);
+  width: calc(100vw - 200px);
+  padding-top: 80px;
+}
+main section .box {
+  padding: 14px;
 }
 
 /* barra del player */
 .navbar-player {
   height: 130px;
   background-color: #282828;
+  z-index: 900;
 }
+
 /* regole di debug */
