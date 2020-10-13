@@ -1,0 +1,32 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regole selettive */
+.conteiner {
+  height: calc(100vh - 130px);
+}
+
+/* nav upgrade */
+.nav-upgrade {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  padding: 0 15px;
+  color: white;
+}
+.nav-upgrade h1 {
+  display: inline-block;
+}
+
+/* barra del player */
+.navbar-player {
+  height: 130px;
+  background-color: #282828;
+}
+/* regole di debug */
