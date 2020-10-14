@@ -19,6 +19,7 @@ a {
 /* regole selettive */
 .conteiner {
   height: calc(100vh - 120px);
+  overflow-y: hidden;
 }
 
 /* nav upgrade */
