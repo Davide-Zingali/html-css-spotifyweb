@@ -109,45 +109,65 @@ main section .box {
 main section .box img {
   width: 100%;
 }
+
 /* barra del player */
 .navbar-player {
-  min-height: 120px;
   background-color: #282828;
-  z-index: 900;
-  display: flex;
-  padding: 0 13px;
-}
-.navbar-player img {
-  width: 50px;
-}
-.navbar-player a i {
-  font-size: 17px;
-  padding: 0 10px;
-}
-#i-play i {
-  font-size: 35px;
-}
-.player-cx {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.su {
+  width: 100vw;
+  height: 120px;
   display: flex;
   align-items: center;
+}
+/* flex-item di navbar-player */
+.player {
+  flex-basis: calc(100vw / 3);
+  padding: 0 5px;
+}
+/* div player sx */
+.player div, .player > a {
+  padding: 0 10px;
+}
+.player-sx {
+  display: flex;
+  align-items: center;
+}
+.player-cx {
+  text-align: center;
   justify-content: center;
+}
+.conteiner-barra {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 .player-dx {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
-.barra-dx {
-  height: 3px;
+#i-play {
+  font-size: 35px;
+}
+/* barra grigia del player */
+.barra-player {
+  height: 5px;
+  border-radius: 10px;
   background-color: gray;
-  width: 130px;
+  width: 50%;
+  margin: 6px 20px;
+  align-self: flex-end;
 }
-.player {
-  width: calc(100vw / 3)
-  
+.barra-player-dx {
+  height: 5px;
+  border-radius: 10px;
+  background-color: gray;
+  width: 150px;
+  margin: 0 10px;
+  align-self: center;
 }
+/* debug nav player */
+.navbar-player img {
+  width: 50px;
+}
+
 /* regole di debug */
