@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3fe9dab609.js" crossorigin="anonymous"></script>
     <title>Web app Spotify</title>
   </head>
@@ -12,10 +14,9 @@
     <!-- nav upgrade -->
     <div class="nav-upgrade">
       <div class="flex-nav">
-        <div class="logo-spotify">
-          <img src="img/favicon.ico" alt="logo">
-          <h1>Spotify</h1>
-        </div>
+        <a href="#">
+          <img src="img/logo.svg" alt="logo">
+        </a>
         <div class="testo-upgrade">
           <a href="#">EFFETTUA L'UPGRADE</a>
         </div>
@@ -30,44 +31,42 @@
 
         <!-- parte playlist su -->
         <div class="col-playlist-su">
-
           <!-- sezione icone -->
           <div class="icona-libreria">
-            <a href="#"><img src="img/home.svg" alt=""> <strong>Home</strong></a>
+            <a href="#"><img src="img/home.svg" alt=""><strong>Home</strong></a>
           </div>
-
           <div class="icona-libreria">
-            <a href="#"><img src="img/search.svg" alt=""> Cerca</a>
+            <a href="#"><img src="img/search.svg" alt="">Cerca</a>
           </div>
-
           <div class="icona-libreria">
-            <a href="#"><img src="img/libreria.svg" alt=""> La tua libreria</a>
+            <a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a>
           </div>
-
           <!-- sezione liste nuove -->
           <ul id="lista-sx">
             <li><strong>PLAYLIST</strong></li>
             <li>
               <a href="#">
                 <div id="icona-plus">
-                  <strong>+</strong>
+                  +
                 </div> Crea Playlist
               </a>
             </li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
+            <div>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </div>
           </ul>
 
         </div>
 
         <!-- parte playlist giù -->
-        <div class="col-playlist-giù">
-          <span>Installa app</span>
+        <div id="col-playlist-giù">
+          <a href="#"><i class="far fa-arrow-alt-circle-down"></i> Installa app</a>
           <hr>
           <strong>John Doe</strong>
         </div>
