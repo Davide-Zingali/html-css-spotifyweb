@@ -18,7 +18,7 @@ a {
 }
 /* regole selettive */
 .conteiner {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 120px);
 }
 
 /* nav upgrade */
@@ -71,7 +71,7 @@ nav ul li:hover .barra-verde {
 .col-playlist {
   background-color: black;
   width: 200px;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 120px);
   padding: 80px 15px 15px 15px;
   display: flex;
   flex-direction: column;
@@ -98,19 +98,56 @@ nav ul li:hover .barra-verde {
 
 .corpo-principale {
   background-color: #141922;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 120px);
   width: calc(100vw - 200px);
   padding-top: 80px;
 }
 main section .box {
   padding: 14px;
+  width: calc(100% / 6)
 }
-
+main section .box img {
+  width: 100%;
+}
 /* barra del player */
 .navbar-player {
-  height: 130px;
+  min-height: 120px;
   background-color: #282828;
   z-index: 900;
+  display: flex;
+  padding: 0 13px;
 }
-
+.navbar-player img {
+  width: 50px;
+}
+.navbar-player a i {
+  font-size: 17px;
+  padding: 0 10px;
+}
+#i-play i {
+  font-size: 35px;
+}
+.player-cx {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.su {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-dx {
+  display: flex;
+  align-items: center;
+}
+.barra-dx {
+  height: 3px;
+  background-color: gray;
+  width: 130px;
+}
+.player {
+  width: calc(100vw / 3)
+  
+}
 /* regole di debug */
