@@ -13,17 +13,28 @@ a {
   text-decoration: none;
   color: lightgray;
 }
-.conteiner-flex {
+a:hover {
+  color: white;
+}
+.container-flex {
   display: flex;
   text-align: center;
 }
-h2 {
-  padding: 10px;
-}
 p {
   padding: 0 10px;
+  color: gray;
 }
-
+.testo-album {
+  padding: 0 10px;
+  font-size: 25px;
+  font-weight: 900;
+}
+#logo-small {
+  display: none;
+}
+#logo-small > img {
+  width: 25px;
+}
 /* scrollbar custom */
 /* width */
 ::-webkit-scrollbar {
@@ -47,7 +58,7 @@ p {
 }
 
 /* regole selettive */
-.conteiner {
+.container {
   height: calc(100vh - 120px);
 }
 
@@ -60,7 +71,7 @@ p {
   width: 100vw;
   height: 80px;
   line-height: 80px;
-  padding: 0 15px;
+  padding: 0 25px 0 15px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -69,9 +80,6 @@ p {
   padding-top: 20px;
   width: 150px;
 }
-.nav-upgrade h1 {
-  display: inline-block;
-}
 .testo-upgrade a {
   border: 1px solid white;
   border-radius: 25px;
@@ -79,7 +87,9 @@ p {
   text-decoration: none;
   color: white;
 }
-
+.testo-upgrade:hover {
+  transform: scale(1.1, 1.1);
+}
 /* barra di navigazione */
 nav ul {
   display: flex;
@@ -120,6 +130,12 @@ nav ul li:hover .barra-verde {
   display: flex;
   line-height: 30px;
 }
+.icona-libreria span {
+  color: gray;
+}
+.icona-libreria span:hover {
+  color: white;
+}
 #lista-sx {
   padding: 15px 0;
 }
@@ -144,11 +160,16 @@ nav ul li:hover .barra-verde {
   margin: 8px 0;
   color: gray;
 }
+#col-playlist-giù span {
+  color: gray;
+}
+#col-playlist-giù span:hover {
+  color: white;
+}
 /* parte centrale laterale dx */
-.conteiner {
+.container {
   display: flex;
 }
-
 .corpo-principale {
   background-color: #141922;
   height: calc(100vh - 120px);
@@ -163,7 +184,9 @@ main section .box {
 main section .box img {
   width: 100%;
 }
-
+main section img:hover {
+  filter: brightness(0.3);
+}
 /* barra del player */
 .navbar-player {
   background-color: #282828;
@@ -171,6 +194,12 @@ main section .box img {
   height: 120px;
   display: flex;
   align-items: center;
+}
+.navbar-player i {
+  color: gray;
+}
+.navbar-player i:hover {
+  color: white;
 }
 /* flex-item di navbar-player */
 .player {
@@ -189,7 +218,7 @@ main section .box img {
   text-align: center;
   justify-content: center;
 }
-.conteiner-barra {
+.container-barra {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -207,7 +236,7 @@ main section .box img {
   height: 5px;
   border-radius: 10px;
   background-color: gray;
-  width: 50%;
+  width: 80%;
   margin: 6px 20px;
   align-self: flex-end;
 }
@@ -224,4 +253,83 @@ main section .box img {
   width: 50px;
 }
 
-/* regole di debug */
+/* media query */
+/* modalità smartphone xs */
+@media all and (max-width: 700px) {
+  main section .box {
+    width: calc(100% / 2);
+  }
+  .container-flex {
+    flex-wrap: wrap;
+  }
+  /* nascosta la playlist-bar su e giù più logo */
+  .col-playlist-su .icona-libreria strong, .col-playlist-su .icona-libreria span, .col-playlist-su ul, #col-playlist-giù hr, #col-playlist-giù strong, #col-playlist-giù span, .nav-upgrade > .flex-nav > a > img {
+    display: none;
+  }
+  .col-playlist {
+    width: 35px;
+    padding: 80px 1px 5px 5px;
+  }
+  .corpo-principale {
+    width: calc(100vw - 35px);
+  }
+  #logo-small {
+    display: block;
+  }
+  .flex-nav {
+    padding: 0 25px 0 5px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  nav ul li {
+    margin-bottom: 20px;
+  }
+  .barra-player-dx {
+    width: 70%;
+  }
+  .player div, .player > a {
+	padding: 0 3px;
+  }
+  .navbar-player img {
+	width: 30px;
+  }
+  .player-sx div:nth-child(2) {
+    font-size: 12px;
+  }
+}
+
+/* modalità smartphone big */
+@media all and (min-width: 701px) and (max-width: 829px) {
+  main section .box {
+    width: calc(100% / 2);
+  }
+  .container-flex {
+    flex-wrap: wrap;
+  }
+  /* barra volume ristretta */
+  .barra-player-dx {
+    width: 70%;
+  }
+}
+
+/* modalità tablet */
+@media all and (min-width: 830px) and (max-width: 1159px) {
+  main section .box {
+    width: calc(100% / 4);
+  }
+  .container-flex {
+    flex-wrap: wrap;
+  }
+}
+
+/* modalità desktop small */
+@media all and (min-width: 1160px) {
+  main section .box {
+    width: calc(100% / 6);
+  }
+  .container-flex {
+    flex-wrap: wrap;
+  }
+}
