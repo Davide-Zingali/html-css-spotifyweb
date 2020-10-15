@@ -250,7 +250,7 @@ main section img:hover {
   width: 20%;
   border-radius: 5px 0px 0px 5px;
 }
-.seconda-barra-player:hover {
+.barra-player:hover .seconda-barra-player, .barra-player-dx:hover .seconda-barra-player {
   background-color: #adff2f;
 }
 .cerchio-barra {
@@ -263,10 +263,9 @@ main section img:hover {
   border-radius: 50%;
   display: none;
 }
-.seconda-barra-player:hover .cerchio-barra {
+.barra-player:hover .cerchio-barra, .barra-player-dx:hover .cerchio-barra {
   display: block;
 }
-
 .barra-player-dx {
   height: 5px;
   border-radius: 10px;
