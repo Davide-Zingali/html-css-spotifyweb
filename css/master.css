@@ -207,7 +207,7 @@ main section img:hover {
   padding: 0 5px;
 }
 /* div player sx */
-.player div, .player > a {
+.player-sx div, .player > a {
   padding: 0 10px;
 }
 .player-sx {
@@ -231,6 +231,9 @@ main section img:hover {
 #i-play {
   font-size: 35px;
 }
+#i-play i:hover {
+  transform: scale(1.1, 1.1);
+}
 /* barra grigia del player */
 .barra-player {
   height: 5px;
@@ -240,6 +243,30 @@ main section img:hover {
   margin: 6px 20px;
   align-self: flex-end;
 }
+.seconda-barra-player {
+  position: relative;
+  background-color: lightgray;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px 0px 0px 5px;
+}
+.seconda-barra-player:hover {
+  background-color: #adff2f;
+}
+.cerchio-barra {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+}
+.seconda-barra-player:hover .cerchio-barra {
+  display: block;
+}
+
 .barra-player-dx {
   height: 5px;
   border-radius: 10px;
@@ -248,7 +275,6 @@ main section img:hover {
   margin: 0 10px;
   align-self: center;
 }
-/* debug nav player */
 .navbar-player img {
   width: 50px;
 }
@@ -289,7 +315,7 @@ main section img:hover {
   .barra-player-dx {
     width: 70%;
   }
-  .player div, .player > a {
+  .player-sx div, .player > a {
 	padding: 0 3px;
   }
   .navbar-player img {
@@ -297,6 +323,9 @@ main section img:hover {
   }
   .player-sx div:nth-child(2) {
     font-size: 12px;
+  }
+  #i-play {
+    font-size: 25px;
   }
 }
 
