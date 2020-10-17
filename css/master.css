@@ -122,7 +122,7 @@ nav ul li:hover .barra-verde {
   justify-content: space-between;
   overflow-y: auto;
 }
-.col-playlist img {
+.col-playlist .icona-libreria img {
   width: 30px;
   padding-right: 5px;
 }
@@ -166,6 +166,23 @@ nav ul li:hover .barra-verde {
 #col-playlist-giù span:hover {
   color: white;
 }
+#foto-profilo img {
+  display: block;
+  width: 15px;
+  margin: 3px auto;
+}
+#foto-profilo {
+  background-color: gray;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#nome-utente {
+  vertical-align: super;
+  font-size: 14px;
+}
+
 /* parte centrale laterale dx */
 .container {
   display: flex;
@@ -360,4 +377,27 @@ main section img:hover {
   .container-flex {
     flex-wrap: wrap;
   }
+}
+
+
+/* test */
+.prova-album {
+  position: relative;
+}
+.immagine-volante i {
+  font-size: 80%;
+}
+.immagine-volante {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 900;
+  /* background-color: red; */
+  width: 50%;
+  height: 50%;
+  display: none;
+}
+.prova-album:hover .immagine-volante {
+  display: block;
 }
